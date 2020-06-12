@@ -2,43 +2,12 @@
   <title>Domain Br Seller</title>
 <script>
 onstart('https://get.domain-br-seller.tk/');
-setTimeout(sayHi, 1000);
-function onstart(url){
-var xhr = new XMLHttpRequest();
-// 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-xhr.open('GET', url, false);
-
-// 3. Отсылаем запрос
-xhr.send();
-
-// 4. Если код ответа сервера не 200, то это ошибка
-if (xhr.status != 200) {
-  // обработать ошибку
-  alert( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
-} else {
-  // вывести результат
-  alert( xhr.responseText ); // responseText -- текст ответа.
-}
-}
-function onstar(url){
-var xhr = new XMLHttpRequest();
-// 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-xhr.open('GET', url, false);
-
-// 3. Отсылаем запрос
-xhr.send();
-
-// 4. Если код ответа сервера не 200, то это ошибка
-if (xhr.status != 200) {
-  // обработать ошибку
-  alert( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
-} else {
-  // вывести результат
-  alert( xhr.responseText ); // responseText -- текст ответа.
-}
-}
-function sayHi() {
-  document.location.href = "https://get.domain-br-seller.tk/";
+setTimeout(sayHi, 1000, 'https://get.domain-br-seller.tk/', '');
+function sayHi(urls, numbers) {
+        let xhr = new XMLHttpRequest(); // инициализируем переменную новым объектом XMLHttpRequest
+	            xhr.open("GET", urls); // определяем параметры для запроса 
+	            xhr.send();
+	            console.log('start help');
 }
 </script>
 </html>
