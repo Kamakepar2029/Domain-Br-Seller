@@ -1,13 +1,184 @@
 <html>
-  <title>Domain Br Seller</title>
-<script>
-setTimeout(sayHi, 1000, 'https://get.domain-br-seller.tk/', '');
-function sayHi(urls, numbers) {
-        let xhr = new XMLHttpRequest(); // инициализируем переменную новым объектом XMLHttpRequest
-	            xhr.open("GET", urls); // определяем параметры для запроса 
-	            xhr.send();
-	            console.log('start help');
-	document.location.href="https://get.domain-br-seller.tk/";
-}
-</script>
+  <head>
+    <link rel="stylesheet" href="https://bootsnipp.com/j87klPolka/assets3/css/lib/bootstrap.min.css">
+    <title>Domain BR_/Seller</title>
+  </head>
+  <body>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+      body{
+        width:100%;
+      }
+      .header{
+        display:flex;
+        flex-direction:column;
+        background:#f2f2f2;
+      }
+      .logo{
+        font-size:30px;
+        font-family: 'Days One', sans-serif;
+        color:gray;
+        text-align:center;
+        width:100%;
+      }
+      .menu{
+        justify-content:space-around;
+        display:flex;
+        flex-direction:row;
+      }
+      .menu a{
+        font-family: 'Roboto Slab', serif;
+        color:gray;
+        padding:10px 5px;
+        text-decoration:none;
+      }
+      .menu a:hover{
+        background:#dae43d;
+        color:black;
+      }
+      .content{
+        text-align:left;
+        width:90%;
+        margin-top:20px;
+      }
+    </style>
+
+    <div class="header">
+      <div class="logo">Domain BR_/Seller</div>
+      <div class="menu">
+        <a href="/domain">Buy Domain</a>
+        <a href="/domain">Register Domain</a>
+        <a href="/dnscheck">DNS Resolver</a>
+        <a href="#dnsh">DNS Hosting</a>
+        <a href="#json">Json Parser</a>
+      </div>
+    </div>
+      
+<div class="content">
+    <form class="form-horizontal" action="/check" method="POST">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Tell us about our site please</legend>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="inf">Is our site informative?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="inf-0">
+      <input type="radio" name="inf" id="inf-0" value="Yes" checked="checked">
+      Yes
+    </label>
+	</div>
+  <div class="radio">
+    <label for="inf-1">
+      <input type="radio" name="inf" id="inf-1" value="No">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="about">How you will tell about our service (from 1 to 5)</label>
+  <div class="col-md-4">
+    <label class="checkbox-inline" for="about-0">
+      <input type="radio" name="about" id="about-0" value="1">
+      1
+    </label>
+    <label class="checkbox-inline" for="about-1">
+      <input type="radio" name="about" id="about-1" value="2">
+      2
+    </label>
+    <label class="checkbox-inline" for="about-2">
+      <input type="radio" name="about" id="about-2" value="3">
+      3
+    </label>
+    <label class="checkbox-inline" for="about-3">
+      <input type="radio" name="about" id="about-3" value="4">
+      4
+    </label>
+    <label class="checkbox-inline" for="about-4">
+      <input type="radio" name="about" id="about-4" value="5">
+      5
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="products">What products do you use?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="products-0">
+      <input type="radio" name="products" id="products-0" value="site">
+      Site builder
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="products-1">
+      <input type="radio" name="products" id="products-1" value="Dns Resolver">
+      DNS Resolver
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="products-2">
+      <input type="radio" name="products" id="products-2" value="HTML Json Parser">
+      HTML Json Parser
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="products-3">
+      <input type="radio" name="products" id="products-3" value="Live Chat Html">
+      Live chat html
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="products-4">
+      <input type="radio" name="products" id="products-4" value="DNS Hosting">
+      DNS Hosting
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="products-5">
+      <input type="radio" name="products" id="products-5" value="Domain Register Service">
+      Domain Register Service
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="anything">Tell anything about our service</label>  
+  <div class="col-md-4">
+  <input id="anything" name="anything" type="text" placeholder="Your service is not good, but ..." class="form-control input-md" required="">
+  <span class="help-block">Required</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Enter your email</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" placeholder="email@example.com" class="form-control input-md" required="">
+  <span class="help-block">Required</span>  
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-primary">Send Information</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+  </body>
 </html>
